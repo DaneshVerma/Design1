@@ -226,44 +226,112 @@ body {
 .main3 {
   height: 80%;
   display: flex;
-  .left{
+  .left {
     width: 40%;
     display: flex;
 
-    .left{
-        width: 20%;
+    .left {
+      width: 20%;
     }
-    .right{
+    .right {
+      width: 80%;
+      background: white;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .contact,
+      p {
+        color: gray;
+        font-size: 1rem;
         width: 80%;
-        background: white;
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        .contact, p{
-            color: gray;
-            font-size: 1rem;
-            width: 80%;
-        }
-        h2{
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2rem;
-        }
-        button{
-            padding: 0.8rem 1rem;
-            background-color: transparent;
-            width: 40%;
-            border-radius: 5px;
-            outline: none;
-            border: 2px solid black;
-        }
-
+      }
+      h2 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 2rem;
+      }
+      button {
+        padding: 0.8rem 1rem;
+        background-color: transparent;
+        width: 40%;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid black;
+      }
     }
   }
-  .right{
+  .right {
     width: 60%;
     background-color: yellowgreen;
     background-image: url(https://i.pinimg.com/1200x/1a/98/3b/1a983bd04a778d0ec69d75f54078247b.jpg);
   }
 }
 
+.main4 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    position: relative;
+    .left {
+      width: 20%;
+    }
+    .right {
+      width: 80%;
+      background-image: url(https://i1.pickpik.com/photos/339/511/699/flower-bloom-pink-stem-preview.jpg);
+      background-color: blueviolet;
+      background-size: cover;
+    }
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      .left {
+        width: 55%;
+        height: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        gap: 1.2rem;
+        padding-left: 5rem;
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button {
+          width: 25%;
+            border: none;
+            background-color: transparent;
+            text-align: left;
+            font-weight: 800;
+            text-decoration: underline;
+            word-spacing: 0.1rem;
+            font-size: 0.9rem;
+          }
+          p{
+            width: 50%;
+            color: gray;
+          }
+      }
+      .mid {
+        width: 20%;
+      }
+      #right {
+        width: 25%;
+        height: 10%;
+        background-color: white;
+        align-self: flex-end;
+        justify-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end ;
+      }
+    }
+  }
+}

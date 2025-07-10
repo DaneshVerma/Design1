@@ -235,7 +235,8 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.main3 .left .right .contact, .main3 .left .right p {
+.main3 .left .right .contact,
+.main3 .left .right p {
   color: gray;
   font-size: 1rem;
   width: 80%;
@@ -256,4 +257,73 @@ body {
   width: 60%;
   background-color: yellowgreen;
   background-image: url(https://i.pinimg.com/1200x/1a/98/3b/1a983bd04a778d0ec69d75f54078247b.jpg);
+}
+
+.main4 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main4 .container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  position: relative;
+}
+.main4 .container .left {
+  width: 20%;
+}
+.main4 .container .right {
+  width: 80%;
+  background-image: url(https://i1.pickpik.com/photos/339/511/699/flower-bloom-pink-stem-preview.jpg);
+  background-color: blueviolet;
+  background-size: cover;
+}
+.main4 .container .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.main4 .container .overlay .left {
+  width: 55%;
+  height: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  gap: 1.2rem;
+  padding-left: 5rem;
+}
+.main4 .container .overlay .left h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+.main4 .container .overlay .left button {
+  width: 25%;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  font-weight: 800;
+  text-decoration: underline;
+  word-spacing: 0.1rem;
+  font-size: 0.9rem;
+}
+.main4 .container .overlay .left p {
+  width: 50%;
+  color: gray;
+}
+.main4 .container .overlay .mid {
+  width: 20%;
+}
+.main4 .container .overlay #right {
+  width: 25%;
+  height: 10%;
+  background-color: white;
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
