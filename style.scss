@@ -396,8 +396,15 @@ body {
     display: flex;
     justify-content: space-around;
     color: white;
-    p{
-        color: gray;
+    .mail {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 0.8rem;
+    }
+    p {
+      color: gray;
+      font-size: 0.8rem;
     }
     .first {
       width: 40%;
@@ -422,12 +429,14 @@ body {
             background-color: transparent;
             outline: none;
             border: 1px solid rgb(114, 113, 113);
+            border-radius: 2px;
           }
           button {
             padding: 0.8rem 1rem;
             border: none;
             font-size: 0.7rem;
             background-color: white;
+            border-radius: 2px;
           }
         }
       }
@@ -461,7 +470,6 @@ body {
         display: flex;
         justify-content: center;
         gap: 2rem;
-        
       }
     }
   }
