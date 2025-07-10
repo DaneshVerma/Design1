@@ -179,6 +179,7 @@ body {
   height: 70%;
   width: 60%;
   display: flex;
+  justify-content: space-between;
 }
 .main2 .overlay .container .right .text {
   padding-left: 3rem;
@@ -204,9 +205,55 @@ body {
   font-size: 0.9rem;
 }
 .main2 .overlay .container .right .icon {
+  width: 20%;
   height: 100%;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main2 .overlay .container .right .icon i {
+  color: black;
+}
+
+.main3 {
+  height: 80%;
+  display: flex;
+}
+.main3 .left {
+  width: 40%;
+  display: flex;
+}
+.main3 .left .left {
+  width: 20%;
+}
+.main3 .left .right {
+  width: 80%;
+  background: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main3 .left .right .contact, .main3 .left .right p {
+  color: gray;
+  font-size: 1rem;
+  width: 80%;
+}
+.main3 .left .right h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+.main3 .left .right button {
+  padding: 0.8rem 1rem;
+  background-color: transparent;
+  width: 40%;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid black;
+}
+.main3 .right {
+  width: 60%;
+  background-color: yellowgreen;
+  background-image: url(https://i.pinimg.com/1200x/1a/98/3b/1a983bd04a778d0ec69d75f54078247b.jpg);
 }
