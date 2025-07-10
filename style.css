@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 html,
@@ -10,115 +13,120 @@ body {
   width: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-.main1 {
+html .main1,
+body .main1 {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
 }
-.main1 .left {
+html .main1 .left,
+body .main1 .left {
   height: 100%;
   width: 30%;
 }
-.main1 .right {
+html .main1 .right,
+body .main1 .right {
   height: 80%;
   width: 50%;
   background-image: url("https://images.unsplash.com/photo-1621274220348-41dc235ff439?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: top;
   background-size: cover;
 }
-.main1 .overlay {
+html .main1 .overlay,
+body .main1 .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   padding: 20px 25px 0px 25px;
 }
-
-.overlay .nav {
+html .main1 .overlay .nav,
+body .main1 .overlay .nav {
   display: flex;
-  gap: 8rem;
+  gap: 12rem;
 }
-.overlay .down {
-  height: 90%;
-  width: 100%;
+html .main1 .overlay .nav h3,
+body .main1 .overlay .nav h3 {
   display: flex;
-  align-items: flex-end;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
 }
-
-.nav .navlinks {
+html .main1 .overlay .nav .navlinks,
+body .main1 .overlay .nav .navlinks {
   width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav .navlinks a {
+html .main1 .overlay .nav .navlinks a,
+body .main1 .overlay .nav .navlinks a {
   text-decoration: none;
   color: black;
   font-size: 12px;
+  font-weight: 700;
 }
-
-.down .downLeft {
+html .main1 .overlay .down,
+body .main1 .overlay .down {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+html .main1 .overlay .down .downLeft,
+body .main1 .overlay .down .downLeft {
   width: 10%;
   height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.down .downMiddle {
+html .main1 .overlay .down .downLeft .leftTop,
+body .main1 .overlay .down .downLeft .leftTop {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+html .main1 .overlay .down .downLeft .leftTop p,
+body .main1 .overlay .down .downLeft .leftTop p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  transform: rotate(-90deg);
+}
+html .main1 .overlay .down .downLeft .leftBottom,
+body .main1 .overlay .down .downLeft .leftBottom {
+  height: 30%;
+  width: 2px;
+  background-color: rgb(206, 206, 206);
+  align-self: center;
+}
+html .main1 .overlay .down .downMiddle,
+body .main1 .overlay .down .downMiddle {
   width: 80%;
   height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.down .downRight {
-  width: 10%;
-  height: 85%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.downLeft .leftTop {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.downLeft .leftTop p {
-  font-size: 10px;
-  transform: rotate(-90deg);
-}
-.downLeft .leftBottom {
-  height: 30%;
-  width: 2px;
-  background-color: rgb(206, 206, 206);
-  align-self: center;
-}
-
-.downMiddle .middleTop h1 {
+html .main1 .overlay .down .downMiddle .middleTop h1,
+body .main1 .overlay .down .downMiddle .middleTop h1 {
   font-size: 4rem;
   margin-bottom: 15px;
   font-family: "Times New Roman", Times, serif;
 }
-.downMiddle .middleTop p {
-  font-size: 10px;
-  width: 35%;
+html .main1 .overlay .down .downMiddle .middleTop p,
+body .main1 .overlay .down .downMiddle .middleTop p {
+  font-size: 0.8rem;
+  width: 45%;
   margin-bottom: 15px;
   line-height: 20px;
   color: gray;
 }
-.downMiddle .middleBottom {
-  display: flex;
-  justify-content: space-between;
-}
-.downMiddle .middleBottom .icons-container {
-  display: flex;
-  gap: 1rem;
-}
-
-#btn {
+html .main1 .overlay .down .downMiddle .middleTop #btn,
+body .main1 .overlay .down .downMiddle .middleTop #btn {
   padding: 5px 25px;
   background-color: black;
   color: white;
@@ -126,62 +134,97 @@ body {
   border-radius: 0.4rem;
   padding: 0.7rem 2rem;
   font-size: 0.6rem;
+  border: none;
 }
-
-.middleBottom .middleRight {
-  width: 40%;
+html .main1 .overlay .down .downMiddle .middleBottom,
+body .main1 .overlay .down .downMiddle .middleBottom {
+  display: flex;
+  justify-content: space-between;
+}
+html .main1 .overlay .down .downMiddle .middleBottom .icons-container,
+body .main1 .overlay .down .downMiddle .middleBottom .icons-container {
+  display: flex;
+  gap: 1rem;
+}
+html .main1 .overlay .down .downMiddle .middleBottom .middleRight,
+body .main1 .overlay .down .downMiddle .middleBottom .middleRight {
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.middleBottom .middleRight .line {
+html .main1 .overlay .down .downMiddle .middleBottom .middleRight .line,
+body .main1 .overlay .down .downMiddle .middleBottom .middleRight .line {
   height: 2px;
-  width: 80%;
+  width: 90%;
   background-color: rgb(202, 202, 202);
+  padding-left: 20%;
 }
-.middleBottom .middleRight p {
-  font-size: 10px;
+html .main1 .overlay .down .downMiddle .middleBottom .middleRight .line .lineInside,
+body .main1 .overlay .down .downMiddle .middleBottom .middleRight .line .lineInside {
+  background-color: rgb(46, 46, 46);
+  height: 100%;
+  width: 50%;
 }
-
-.main2 {
+html .main1 .overlay .down .downMiddle .middleBottom .middleRight p,
+body .main1 .overlay .down .downMiddle .middleBottom .middleRight p {
+  font-size: 1.5rem;
+}
+html .main1 .overlay .down .downRight,
+body .main1 .overlay .down .downRight {
+  width: 10%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .main2,
+body .main2 {
   height: 90%;
   padding: 2rem;
 }
-.main2 .overlay {
+html .main2 .overlay,
+body .main2 .overlay {
   height: 90%;
   display: flex;
   position: relative;
 }
-.main2 .overlay .left {
+html .main2 .overlay .left,
+body .main2 .overlay .left {
   height: 100%;
   width: 55%;
   background-image: url("https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/plants-blog/1-D.jpg");
   background-position: left;
   background-size: cover;
 }
-.main2 .overlay .right {
+html .main2 .overlay .right,
+body .main2 .overlay .right {
   height: 80%;
   width: 30%;
 }
-.main2 .overlay .container {
+html .main2 .overlay .container,
+body .main2 .overlay .container {
   position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
 }
-.main2 .overlay .container .left {
+html .main2 .overlay .container .left,
+body .main2 .overlay .container .left {
   height: 100%;
   width: 40%;
 }
-.main2 .overlay .container .right {
+html .main2 .overlay .container .right,
+body .main2 .overlay .container .right {
   background-color: #fff;
   height: 70%;
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
-.main2 .overlay .container .right .text {
+html .main2 .overlay .container .right .text,
+body .main2 .overlay .container .right .text {
   padding-left: 3rem;
   width: 80%;
   height: 100%;
@@ -190,11 +233,13 @@ body {
   justify-content: center;
   gap: 1rem;
 }
-.main2 .overlay .container .right .text p {
+html .main2 .overlay .container .right .text p,
+body .main2 .overlay .container .right .text p {
   width: 65%;
   color: gray;
 }
-.main2 .overlay .container .right .text button {
+html .main2 .overlay .container .right .text button,
+body .main2 .overlay .container .right .text button {
   width: 20%;
   border: none;
   background-color: transparent;
@@ -204,7 +249,8 @@ body {
   word-spacing: 0.1rem;
   font-size: 0.9rem;
 }
-.main2 .overlay .container .right .icon {
+html .main2 .overlay .container .right .icon,
+body .main2 .overlay .container .right .icon {
   width: 20%;
   height: 100%;
   color: black;
@@ -212,22 +258,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main2 .overlay .container .right .icon i {
+html .main2 .overlay .container .right .icon i,
+body .main2 .overlay .container .right .icon i {
   color: black;
 }
-
-.main3 {
+html .main3,
+body .main3 {
   height: 80%;
   display: flex;
 }
-.main3 .left {
+html .main3 .left,
+body .main3 .left {
   width: 40%;
   display: flex;
 }
-.main3 .left .left {
+html .main3 .left .left,
+body .main3 .left .left {
   width: 20%;
 }
-.main3 .left .right {
+html .main3 .left .right,
+body .main3 .left .right {
   width: 80%;
   background: white;
   padding: 3rem;
@@ -235,17 +285,21 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.main3 .left .right .contact,
-.main3 .left .right p {
+html .main3 .left .right .contact,
+html .main3 .left .right p,
+body .main3 .left .right .contact,
+body .main3 .left .right p {
   color: gray;
   font-size: 1rem;
   width: 80%;
 }
-.main3 .left .right h2 {
+html .main3 .left .right h2,
+body .main3 .left .right h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
 }
-.main3 .left .right button {
+html .main3 .left .right button,
+body .main3 .left .right button {
   padding: 0.8rem 1rem;
   background-color: transparent;
   width: 40%;
@@ -253,40 +307,46 @@ body {
   outline: none;
   border: 2px solid black;
 }
-.main3 .right {
+html .main3 .right,
+body .main3 .right {
   width: 60%;
   background-color: yellowgreen;
   background-image: url(https://i.pinimg.com/1200x/1a/98/3b/1a983bd04a778d0ec69d75f54078247b.jpg);
 }
-
-.main4 {
+html .main4,
+body .main4 {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main4 .container {
+html .main4 .container,
+body .main4 .container {
   height: 80%;
   width: 80%;
   display: flex;
   position: relative;
 }
-.main4 .container .left {
+html .main4 .container .left,
+body .main4 .container .left {
   width: 20%;
 }
-.main4 .container .right {
+html .main4 .container .right,
+body .main4 .container .right {
   width: 80%;
   background-image: url(https://i1.pickpik.com/photos/339/511/699/flower-bloom-pink-stem-preview.jpg);
   background-color: blueviolet;
   background-size: cover;
 }
-.main4 .container .overlay {
+html .main4 .container .overlay,
+body .main4 .container .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
 }
-.main4 .container .overlay .left {
+html .main4 .container .overlay .left,
+body .main4 .container .overlay .left {
   width: 55%;
   height: 50%;
   background-color: #fff;
@@ -297,10 +357,12 @@ body {
   gap: 1.2rem;
   padding-left: 5rem;
 }
-.main4 .container .overlay .left h2 {
+html .main4 .container .overlay .left h2,
+body .main4 .container .overlay .left h2 {
   font-family: "Times New Roman", Times, serif;
 }
-.main4 .container .overlay .left button {
+html .main4 .container .overlay .left button,
+body .main4 .container .overlay .left button {
   width: 25%;
   border: none;
   background-color: transparent;
@@ -310,14 +372,17 @@ body {
   word-spacing: 0.1rem;
   font-size: 0.9rem;
 }
-.main4 .container .overlay .left p {
+html .main4 .container .overlay .left p,
+body .main4 .container .overlay .left p {
   width: 50%;
   color: gray;
 }
-.main4 .container .overlay .mid {
+html .main4 .container .overlay .mid,
+body .main4 .container .overlay .mid {
   width: 20%;
 }
-.main4 .container .overlay #right {
+html .main4 .container .overlay #right,
+body .main4 .container .overlay #right {
   width: 25%;
   height: 10%;
   background-color: white;
@@ -327,62 +392,70 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-
-.main5 {
+html .main5,
+body .main5 {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main5 .container {
+html .main5 .container,
+body .main5 .container {
   width: 80%;
   height: 90%;
   display: flex;
   justify-content: space-between;
 }
-.main5 .container .left {
+html .main5 .container .left,
+body .main5 .container .left {
   border-radius: 5px;
   width: 35%;
   background-image: url(https://c1.wallpaperflare.com/preview/599/555/601/plant-glass-bottle-hand-holding.jpg);
   background-size: cover;
 }
-.main5 .container .right {
+html .main5 .container .right,
+body .main5 .container .right {
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.main5 .container .right h2 {
+html .main5 .container .right h2,
+body .main5 .container .right h2 {
   font-family: "Times New Roman", Times, serif;
 }
-.main5 .container .right .first {
+html .main5 .container .right .first,
+body .main5 .container .right .first {
   width: 100%;
   height: 30%;
   display: flex;
   align-items: flex-end;
 }
-.main5 .container .right .second {
+html .main5 .container .right .second,
+body .main5 .container .right .second {
   width: 100%;
   height: 60%;
   display: flex;
   justify-content: space-between;
   gap: 10%;
 }
-.main5 .container .right .second .para {
+html .main5 .container .right .second .para,
+body .main5 .container .right .second .para {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: gray;
 }
-
-.main6 {
+html .main6,
+body .main6 {
   height: 80%;
   display: flex;
   align-items: flex-end;
 }
-.main6 .container {
+html .main6 .container,
+body .main6 .container {
   background-color: black;
   height: 80%;
   width: 100%;
@@ -390,17 +463,21 @@ body {
   justify-content: space-around;
   color: white;
 }
-.main6 .container .mail {
+html .main6 .container .mail,
+body .main6 .container .mail {
   font-size: 1.5rem;
 }
-.main6 .container h2 {
+html .main6 .container h2,
+body .main6 .container h2 {
   font-size: 0.8rem;
 }
-.main6 .container p {
+html .main6 .container p,
+body .main6 .container p {
   color: gray;
   font-size: 0.8rem;
 }
-.main6 .container .first {
+html .main6 .container .first,
+body .main6 .container .first {
   width: 40%;
   height: 100%;
   display: flex;
@@ -409,18 +486,21 @@ body {
   padding: 4rem 0;
   padding-left: 5rem;
 }
-.main6 .container .first .up {
+html .main6 .container .first .up,
+body .main6 .container .first .up {
   display: flex;
   flex-direction: column;
   height: 10%;
   gap: 1rem;
 }
-.main6 .container .first .up div {
+html .main6 .container .first .up div,
+body .main6 .container .first .up div {
   display: flex;
   align-items: center;
   gap: 2px;
 }
-.main6 .container .first .up div input {
+html .main6 .container .first .up div input,
+body .main6 .container .first .up div input {
   width: 50%;
   padding: 0.7rem 1rem;
   background-color: transparent;
@@ -428,14 +508,16 @@ body {
   border: 1px solid rgb(114, 113, 113);
   border-radius: 2px;
 }
-.main6 .container .first .up div button {
+html .main6 .container .first .up div button,
+body .main6 .container .first .up div button {
   padding: 0.8rem 1rem;
   border: none;
   font-size: 0.7rem;
   background-color: white;
   border-radius: 2px;
 }
-.main6 .container .second {
+html .main6 .container .second,
+body .main6 .container .second {
   width: 15%;
   height: 100%;
   display: flex;
@@ -444,7 +526,8 @@ body {
   padding: 4rem 0;
   padding-left: 5rem;
 }
-.main6 .container .third {
+html .main6 .container .third,
+body .main6 .container .third {
   width: 15%;
   height: 100%;
   display: flex;
@@ -453,14 +536,16 @@ body {
   padding: 4rem 0;
   padding-left: 5rem;
 }
-.main6 .container .fourth {
+html .main6 .container .fourth,
+body .main6 .container .fourth {
   width: 20%;
   height: 80%;
   display: flex;
   padding: 4rem 0;
   align-items: flex-end;
 }
-.main6 .container .fourth .icons {
+html .main6 .container .fourth .icons,
+body .main6 .container .fourth .icons {
   width: 100%;
   display: flex;
   justify-content: center;
