@@ -144,6 +144,7 @@ body .main1 .overlay .down .downMiddle .middleBottom {
 html .main1 .overlay .down .downMiddle .middleBottom .icons-container,
 body .main1 .overlay .down .downMiddle .middleBottom .icons-container {
   display: flex;
+  font-size: 1.5rem;
   gap: 1rem;
 }
 html .main1 .overlay .down .downMiddle .middleBottom .middleRight,
